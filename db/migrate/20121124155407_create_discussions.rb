@@ -3,7 +3,7 @@ class CreateDiscussions < ActiveRecord::Migration
     create_table :discussions do |t|
       t.string :title
       t.text :post
-      t.referenes :user
+      t.references :user
 
       t.timestamps
     end
