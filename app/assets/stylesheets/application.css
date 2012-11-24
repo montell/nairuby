@@ -81,3 +81,12 @@ html,body{height:100%;}
 	margin-top: -50px;
 	width: auto;
 }
+
+#discussion_post {
+	width: 370px;
+	height: 40px;
+}
+
+#discussion_title {
+	width: 370px;
+}
