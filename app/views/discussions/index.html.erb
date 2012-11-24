@@ -4,7 +4,16 @@
 </div>
 
 <% @discussions.each do |discussion| %>
-	<p><%= link_to discussion.title, discussion_path(discussion) %>&nbsp;By&nbsp;<%= discussion.user_id %></p>
+	<p class>
+		<h5><%= discussion.title %></h5>
+		<%= discussion.post[0..100] %><br />
+		<% unless discussion.post[100..160].nil? %>
+			<%= discussion.post[100..160] << "..." %><br />
+		<% end %>
+		<%= link_to discussion.title, "#{discussion_path(discussion)}#disqus_thread" %>
+		&nbsp;Created By&nbsp;
+		<%= link_to discussion.user.name, user_path(discussion.user) %>
+	</p>
 <% end %>
 
 <br /><br /><%= link_to t('.new', :default => t("helpers.links.new")),
