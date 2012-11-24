@@ -1,4 +1,6 @@
 NairubySite::Application.routes.draw do
+  resources :discussions
+
   authenticated :user do
     root :to => 'home#index'
   end
