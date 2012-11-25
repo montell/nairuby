@@ -99,6 +99,7 @@ GEM
     multi_json (1.3.7)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
+    pg (0.14.1)
     polyglot (0.3.3)
     quiet_assets (1.0.1)
       railties (~> 3.1)
@@ -151,7 +152,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.6)
     therubyracer (0.10.2)
       libv8 (~> 3.3.10)
     thin (1.5.0)
@@ -191,13 +191,13 @@ DEPENDENCIES
   hub (>= 1.10.2)
   jquery-rails
   launchy (>= 2.1.2)
+  pg
   quiet_assets (>= 1.0.1)
   rails (= 3.2.8)
   rolify (>= 3.2.0)
   rspec-rails (>= 2.11.4)
   sass-rails (~> 3.2.3)
   simple_form (>= 2.0.4)
-  sqlite3
   thin (>= 1.5.0)
   twitter-bootstrap-rails (>= 2.1.3)
   uglifier (>= 1.0.3)
