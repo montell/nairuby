@@ -10,6 +10,8 @@ gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.4"
 
+gem "figaro" # gem for environment variables
+
 group :development do
 	gem "quiet_assets", ">= 1.0.1"
 	gem "hub", ">= 1.10.2", :require => nil
