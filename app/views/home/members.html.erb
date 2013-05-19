@@ -1,0 +1,34 @@
+<h1>Group members</h1>
+
+<% for i in 1..@rows do%>
+	<div class="row-fluid">
+	  <ul class="thumbnails">
+	  	<% for j in 0..3 do %>
+		    <li class="span3">
+		      <div class="thumbnail">
+		        <img src="http://placehold.it/260x180" alt="">
+		        <div class="caption">
+		          <b><%= User.find(@arr_users[(4*i)-(3-j)]).name %></b>
+		        </div>
+		      </div>
+		    </li>
+	    <% end %>
+	  </ul>
+	</div>
+<% end %>
+
+
+<div class="row-fluid">
+  <ul class="thumbnails">
+  	<% for i in 1..@rem_rows do%>
+	    <li class="span3">
+	      <div class="thumbnail">
+	        <img src="http://placehold.it/260x180" alt="">
+	        <div class="caption">
+	          <b><%= User.find((@members-@rem_rows)+i).name %></b>
+	        </div>
+	      </div>
+	    </li>
+    <% end %>
+  </ul>
+</div>
