@@ -51,4 +51,9 @@ NairubySite::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Gmail gem setup
+  config.after_initialize do
+    ::GMAIL = Gmail.connect!(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
+  end
 end
