@@ -1,8 +1,5 @@
 NairubySite::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  if !Rails.env.development? && !Rails.env.test?
-    config.middleware.insert_before Rack::Cache, Rack::Static, urls: [config.assets.prefix], root: 'public'
-  end
 
   # Code is not reloaded between requests
   config.cache_classes = true
