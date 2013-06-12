@@ -79,11 +79,6 @@ NairubySite::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
-  # Devise email themes
-  config.to_prepare do
-    Devise::Mailer.layout "user_mails" # email.haml or email.erb
-  end
-
 
 
   # Log the query plan for queries taking more than this (works
