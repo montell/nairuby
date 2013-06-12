@@ -7,8 +7,8 @@ class HomeController < ApplicationController
 
   def members
   	@arr_users = []
-  	@users = User.all
-  	User.all.each do |user|
+  	@users = User.find(:all, :order => "name ASC")
+  	@users.each do |user|
   		@arr_users << user.id
   	end
 
