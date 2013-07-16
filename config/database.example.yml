@@ -1,0 +1,15 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: nairuby_site_production
+  pool: 5
+  username: banta
+  password:
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: nairuby_site_development
+  pool: 5
+  username: banta
+  password:
