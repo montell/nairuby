@@ -13,3 +13,11 @@ development:
   pool: 5
   username: banta
   password:
+
+  test:
+    adapter: postgresql
+    encoding: unicode
+    database: nairuby_site_test
+    pool: 5
+    username: banta
+    password:
