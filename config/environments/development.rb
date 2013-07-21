@@ -53,7 +53,7 @@ NairubySite::Application.configure do
   config.assets.debug = true
 
   # Gmail gem setup
-  config.after_initialize do
-    ::GMAIL = Gmail.connect!(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
-  end
+  #config.after_initialize do
+    #::GMAIL = Gmail.connect!(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
+  #end
 end
