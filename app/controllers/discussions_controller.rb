@@ -1,4 +1,5 @@
 class DiscussionsController < ApplicationController
+  before_filter :authenticate_user!, except: [:show, :index] 
   # GET /discussions
   # GET /discussions.json
   def index
