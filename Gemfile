@@ -31,7 +31,7 @@ group :test do
 	gem "email_spec", ">= 1.4.0"
 	gem "cucumber-rails", ">= 1.3.0", :require => false
 	gem "launchy", ">= 2.1.2"
-	gem "capybara", ">= 1.1.3"
+	gem "capybara"
 end
 
 group :production do
