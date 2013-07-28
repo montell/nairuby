@@ -5,7 +5,9 @@
 
 <h4><%= @discussion.title %></h4>
 <p><%= @discussion.post %></p>
-<p><%= link_to "Edit", edit_discussion_path(@discussion), :class => 'btn btn-mini' %> | <%= link_to("Delete", @discussion, :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'btn btn-mini') %></p>
+<% if user_signed_in? %>
+	<p><%= link_to "Edit", edit_discussion_path(@discussion), :class => 'btn btn-mini' %> | <%= link_to("Delete", @discussion, :data => { 	:confirm => "Are you sure?" }, :method => :delete, :class => 'btn btn-mini') %></p>
+<% end %>
 <strong>Started by <%= link_to @discussion.user.name, user_path(@discussion.user) %></strong>
 
 <div id="disqus_thread"></div>
