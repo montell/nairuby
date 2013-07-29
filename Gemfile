@@ -8,7 +8,11 @@ gem 'twitter-bootstrap-rails', ">= 2.1.3"
 gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
-gem "simple_form", ">= 2.0.4"
+gem "simple_form"
+gem 'sass-rails', '~> 4.0.0.rc2'
+gem 'uglifier', '>= 1.3.0'
+gem 'jbuilder', '~> 1.2'
+gem 'turbolinks'
 gem 'hirb'
 gem 'gmail'
 
@@ -30,10 +34,10 @@ group :development, :test do
 end
 
 group :test do
-	gem "database_cleaner", ">= 0.9.1"
-	gem "email_spec", ">= 1.4.0"
-	gem "cucumber-rails", ">= 1.3.0", :require => false
-	gem "capybara", ">= 1.1.3"
+	gem "database_cleaner"
+	gem "email_spec"
+	gem "cucumber-rails", :require => false
+	gem "capybara"
 end
 
 group :doc do
