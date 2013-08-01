@@ -4,5 +4,6 @@ FactoryGirl.define do
   factory :discussion do
     title "MyString"
     post "MyText"
+    association :user, :factory => :user
   end
 end
