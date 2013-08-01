@@ -7,7 +7,7 @@
 		  <%= f.input :email, :required => true %>
 		  <%= f.input :password, :autocomplete => "off", :required => false %>
 		  <%= f.input :password_confirmation, :required => false %>
-		  <%= f.input :current_password, :required => true %>
+		  <%= f.input :current_password, :required => true, :hint => "Enter current password to save" %>
 
 
 		  <% if !current_user.has_role? :admin or User.find(resource).email_subscription == false  %>
