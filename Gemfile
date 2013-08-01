@@ -3,8 +3,8 @@ gem 'rails', '3.2.8'
 gem 'pg'
 
 gem 'jquery-rails'
-gem "bootstrap-sass", ">= 2.1.1.0"
-gem 'twitter-bootstrap-rails', ">= 2.1.3"
+gem "bootstrap-sass"
+gem 'twitter-bootstrap-rails'
 gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
