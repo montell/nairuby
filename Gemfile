@@ -12,7 +12,7 @@ gem "simple_form", ">= 2.0.4"
 gem 'hirb'
 gem 'gmail'
 gem "figaro" # gem for environment variables
-gem 'ckeditor', :git => 'git@github.com:Banta/ckeditor.git'
+gem 'ckeditor_rails'
 
 group :development do
 	gem "quiet_assets", ">= 1.0.1"
