@@ -1,0 +1,19 @@
+development:
+  cloud_name: get-real-name
+  api_key: 'change-me'
+  api_secret: am-not-real
+  enhance_image_tag: true
+  static_image_support: false
+
+production:
+  cloud_name: get-real-name
+  api_key: 'change-me'
+  api_secret: am-not-real
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: get-real-me
+  api_key: 'change-me'
+  api_secret: am-not-real
+  enhance_image_tag: true
+  static_image_support: false
