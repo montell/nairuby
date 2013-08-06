@@ -15,6 +15,7 @@ gem 'gmail'
 gem "figaro" # gem for environment variables
 gem 'delayed_job_active_record'
 gem 'ckeditor', :github => 'Banta/ckeditor'
+gem 'unicorn'
 
 group :development do
 	gem "quiet_assets", ">= 1.0.1"
