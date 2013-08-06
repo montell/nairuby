@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
   #   en.user_mailer.notification.subject
   #
   def notification(user, subject, message)
-    @message = message
+    @message = message.html_safe
     @user = user
 
     if !user.email.nil?

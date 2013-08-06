@@ -28,7 +28,7 @@ class HomeController < ApplicationController
       redirect_to admin_send_emails_path
     elsif !params[:subject].blank? and !params[:message].blank?
       User.where(:email_subscription => true).each do |user|
-        UserMailer.notification(user, params[:subject], params[:message].html_safe).deliver
+        UserMailer.delay.notification(user, params[:subject], params[:message])
       end
       flash[:notice] = "Email successfully sent"
       redirect_to admin_send_emails_path
