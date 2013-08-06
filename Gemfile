@@ -11,6 +11,7 @@ gem "simple_form", ">= 2.0.4"
 gem 'hirb'
 gem 'gmail'
 gem "figaro" # gem for environment variables
+gem 'delayed_job_active_record'
 
 group :development do
 	gem "quiet_assets", ">= 1.0.1"
