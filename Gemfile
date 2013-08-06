@@ -12,6 +12,7 @@ gem 'hirb'
 gem 'gmail'
 gem "figaro" # gem for environment variables
 gem 'delayed_job_active_record'
+gem 'ckeditor', :git => 'git@github.com:Banta/ckeditor.git'
 
 group :development do
 	gem "quiet_assets", ">= 1.0.1"
