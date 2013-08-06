@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:Banta/ckeditor.git
+  remote: git://github.com/Banta/ckeditor.git
   revision: 79d3e36e659eb81ff8af42fda445d9f85cb75188
   specs:
     ckeditor (4.0.3)
