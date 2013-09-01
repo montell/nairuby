@@ -18,4 +18,20 @@ class HomeController < ApplicationController
   	@rows = @members/4
   	@rem_rows = @members%4
   end
+
+  def send_notifications
+    if params[:subject].blank? and !params[:message].blank?
+      flash[:alert] = "Subject is required"
+      redirect_to admin_send_emails_path 
+    elsif params[:message].blank? and !params[:subject].blank?
+      flash[:alert] = "Message is required"
+      redirect_to admin_send_emails_path
+    elsif !params[:subject].blank? and !params[:message].blank?
+      User.where(:email_subscription => true).each do |user|
+        UserMailer.delay.notification(user, params[:subject], params[:message])
+      end
+      flash[:notice] = "Email successfully sent"
+      redirect_to admin_send_emails_path
+    end
+  end
 end

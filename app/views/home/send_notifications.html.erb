@@ -1,0 +1,9 @@
+<h1>Send Email To The Group</h1>  
+<%= form_tag admin_send_emails_path, :class=>"", :method => :get do %>
+	<div class="well">
+		<div class="form-inline">
+			<%= text_field_tag :subject, params[:subject], :placeholder=>"Subject" %>&nbsp;&nbsp;<%= submit_tag "Send", :class => "btn btn-primary" %>
+		</div><br/>
+		<%= text_area_tag :message, params[:message], :class => 'ckeditor' %>
+	</div>
+<% end %>

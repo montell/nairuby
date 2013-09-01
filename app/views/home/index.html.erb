@@ -1,7 +1,11 @@
 <div class="leaderboard">  
 	<h1>Ruby User Group</h1>  
-	<p>We are a group of Ruby enthusiasts, meeting monthly to present and talk all things Ruby – a dynamic open source Programming Language with a focus on simplicity and productivity. The meet-ups are an opportunity to meet fellow Rubyists, share ideas and of course do some hacking. The community is open to anyone, whether you are looking to add Ruby/Rails to your toolbox or you just want to Try Ruby.</p>  
-	<p><a href="/users/sign_up" class="btn btn-success btn-large">Join us</a></p>
+	<p>We are a group of Ruby enthusiasts, meeting monthly to present and talk all things Ruby – a dynamic open source Programming Language with a focus on simplicity and productivity. The meet-ups are an opportunity to meet fellow Rubyists, share ideas and of course do some hacking. The community is open to anyone, whether you are looking to add Ruby/Rails to your toolbox or you just want to Try Ruby.</p><br/>
+
+	<!-- Show the join button if user is not logged in-->
+	<% if !user_signed_in? %>  
+		<p><a href="/users/sign_up" class="btn btn-success btn-large">Join us</a></p>
+	<% end %>
 </div>
 
 <div class="row">
